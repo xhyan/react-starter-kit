@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
-import classes from './Test.scss'
+import classes from './Test.less'
 
 var TodoList = React.createClass({
   getInitialState: function() {
@@ -27,7 +27,7 @@ var TodoList = React.createClass({
     return (
       <div>
         <button onClick={this.handleAdd}>Add Item</button>
-        <ReactCSSTransitionGroup transitionName={classes.example} transitionEnterTimeout={500} transitionLeaveTimeout={300}>
+        <ReactCSSTransitionGroup transitionName={classes['example']} transitionEnterTimeout={500} transitionLeaveTimeout={300}>
           {items}
         </ReactCSSTransitionGroup>
       </div>

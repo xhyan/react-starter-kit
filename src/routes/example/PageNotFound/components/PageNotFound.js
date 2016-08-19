@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import NotFoundImage from '../assets/404.jpg'
-import classes from './PageNotFound.scss'
+import classes from './PageNotFound.less'
 import { withRouter } from 'react-router';
 
 class PageNotFound extends Component{
@@ -12,10 +12,10 @@ class PageNotFound extends Component{
   render(){
 
     return (
-      <div className={classes.container}>
+      <div className={classes['container']}>
         <h1>Page not found!!!</h1>
         <h3>
-          <a className={classes.link} onClick={this.back.bind(this)}>Back</a>
+          <a className={classes['link']} onClick={this.back.bind(this)}>Back</a>
         </h3>
         <img src={NotFoundImage}/>
       </div>
