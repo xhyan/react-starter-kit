@@ -35,6 +35,12 @@ const areaData = [{
 
 class AntForm extends Component{
   render(){
-
+      <Form horizontal>
+        <FormItem label="数字输入框" labelCol={{ span: 8}} wrapperCol={{ span: 8}}>
+          <InputNumber min={1} max={10} style={{ width: 100 }}
+           {...getFieldProps('inputNumber', {initialValue: 3 })} />
+          <span className="ant-form-text">个人</span>
+        </FormItem>
+      </Form>
   }
 }
