@@ -11,6 +11,7 @@ import Test from './example/Test'
 
 import Table from './antd/Table';
 import Modal from './antd/Modal';
+import MyForm from './antd/Form';
 
 /*  Note: Instead of using JSX, we recommend using react-router
     PlainRoute objects to build route definitions.   */
@@ -28,7 +29,8 @@ export const createRoutes = (store) => ([
       RouteRoute(store),
       Test(store),
       Table(store),
-      Modal(store)
+      Modal(store),
+      MyForm(store)
     ]
   },
   {

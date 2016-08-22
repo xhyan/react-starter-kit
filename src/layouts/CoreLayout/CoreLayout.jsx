@@ -28,11 +28,12 @@ export const CoreLayout = ({ children }) => (
               <SubMenu key="antdLearn" title={<span><Icon type="laptop" />antd</span>}>
                 <Menu.Item key="table"><Link to="/antd/table">Table</Link></Menu.Item>
                 <Menu.Item key="modal"><Link to="/antd/modal">Modal</Link></Menu.Item>
+                <Menu.Item key="form"><Link to="/antd/form">Form</Link></Menu.Item>
               </SubMenu>
             </Menu>
           </aside>
           <div className={styles["ant-layout-content"]}>
-            <div style={{ height: 240 }}>
+            <div style={{ height: 560 }}>
               <div style={{clear: 'both'}}>{children}</div>
             </div>
           </div>
