@@ -9,12 +9,12 @@ const MyForm = Form.create({
     console.log(field);
   },
   mapPropsToFields(props) {
-    // console.log(props.fields);
+    console.log(props);
     return props.fields;
   }
 })(AntForm);
 
 const mapActionCreators = {}
 
-const mapStateToProps = (state) => ({myForm: state.myForm})
+const mapStateToProps = (state) => ({myForm: state.form})
 export default connect(mapStateToProps, mapActionCreators)(MyForm);
