@@ -15,7 +15,7 @@ const ACTION_HANDLERS = {
 // Reducer
 // ------------------------------------
 const initialState = {
-  myForm:{}
+
 }
 export default function(state = initialState, action) {
   const handler = ACTION_HANDLERS[action.type];

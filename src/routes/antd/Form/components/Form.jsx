@@ -56,6 +56,7 @@ class AntForm extends Component {
 
   render() {
     const { getFieldProps } = this.props.form;
+    // console.log(this.props.form);
     return (
       <Form horizontal onSubmit={this.handleSubmit}>
         <FormItem label="InputNumber 数字输入框" labelCol={{
@@ -194,4 +195,4 @@ class AntForm extends Component {
 
 
 
-export default AntForm; 
+export default AntForm;
