@@ -56,33 +56,33 @@ class AntForm extends Component {
 
   render() {
     const { getFieldProps } = this.props.form;
-    // console.log(this.props.form);
-    return (
+    console.log(this.props);
+      return (
       <Form horizontal onSubmit={this.handleSubmit}>
-        <FormItem label="InputNumber 数字输入框" labelCol={{
+        <FormItem label="数量" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 10
         }}>
           <InputNumber min={1} max={10} style={{
             width: 100
-          }} {...getFieldProps('inputNumber', { initialValue: 3 })}/>
+          }} {...getFieldProps('numbers', { initialValue: 3 })}/>
           <span className="ant-form-text">
             台机器</span>
         </FormItem>
 
-        <FormItem label="我是标题" labelCol={{
+        <FormItem label="标题" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 10
         }}>
-          <p className="ant-form-text" id="static" name="static">唧唧复唧唧木兰当户织呀</p>
+          <p className="ant-form-text" id="static" name="static">链接</p>
           <p className="ant-form-text">
             <a href="#">链接文字</a>
           </p>
         </FormItem>
 
-        <FormItem label="Switch 开关" labelCol={{
+        <FormItem label="开关" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 10
@@ -90,7 +90,7 @@ class AntForm extends Component {
           <Switch {...getFieldProps('switch', { valuePropName: 'checked' })}/>
         </FormItem>
 
-        <FormItem label="Slider 滑动输入条" labelCol={{
+        <FormItem label="级别" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 10
@@ -103,17 +103,17 @@ class AntForm extends Component {
             'E',
             'F',
             'G'
-          ]} {...getFieldProps('slider')}/>
+          ]} {...getFieldProps('level')}/>
         </FormItem>
 
-        <FormItem label="Select 选择器" labelCol={{
+        <FormItem label="名字" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 16
         }} required>
           <Select style={{
             width: 200
-          }} {...getFieldProps('select')}>
+          }} {...getFieldProps('name')}>
             <Option value="jack">jack</Option>
             <Option value="lucy">lucy</Option>
             <Option value="disabled" disabled>disabled</Option>
@@ -121,17 +121,17 @@ class AntForm extends Component {
           </Select>
         </FormItem>
 
-        <FormItem label="级联选择" labelCol={{
+        <FormItem label="地址" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 6
         }} required hasFeedback>
           <Cascader style={{
             width: 200
-          }} options={areaData} {...getFieldProps('area')}/>
+          }} options={areaData} {...getFieldProps('address')}/>
         </FormItem>
 
-        <FormItem label="DatePicker 日期选择框" labelCol={{
+        <FormItem label="日期" labelCol={{
           span: 8
         }} required>
           <Col span="4">
@@ -149,7 +149,7 @@ class AntForm extends Component {
           </Col>
         </FormItem>
 
-        <FormItem label="TimePicker 时间选择器" labelCol={{
+        <FormItem label="时间" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 16
@@ -167,11 +167,11 @@ class AntForm extends Component {
           </RadioGroup>
         </FormItem>
 
-        <FormItem label="logo图" labelCol={{
+        <FormItem label="logo" labelCol={{
           span: 8
         }} wrapperCol={{
           span: 16
-        }} help="提示信息要长长长长长长长长长长长长长长">
+        }} help="提示信息要">
           <Upload name="logo" action="/upload.do" listType="picture" onChange={this.handleUpload} {...getFieldProps('upload', { valuePropName: 'fileList', normalize: this.normFile, })}>
             <Button type="ghost">
               <Icon type="upload"/>
@@ -193,6 +193,6 @@ class AntForm extends Component {
   }
 }
 
-
+AntForm = Form.create()(AntForm);
 
 export default AntForm;

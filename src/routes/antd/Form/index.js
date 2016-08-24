@@ -7,7 +7,7 @@ export default (store) => ({
       const Form  = require('./containers/FormContainer').default;
       const reducer = require('./modules/form').default;
       // const Form = require('./components/Form').default;
-      injectReducer(store, {key: 'myform', reducer});
+      injectReducer(store, {key: 'myForm', reducer});
       cb(null, Form);
     }, 'form')
   }
