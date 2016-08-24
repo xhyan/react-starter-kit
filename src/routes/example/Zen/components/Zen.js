@@ -15,7 +15,7 @@ export default class Zen extends Component {
   }
 
   render () {
-    const props = this.props
+    const props = this.props;
 
     return (
       <div>

@@ -56,7 +56,6 @@ class AntForm extends Component {
 
   render() {
     const { getFieldProps } = this.props.form;
-    console.log(this.props);
       return (
       <Form horizontal onSubmit={this.handleSubmit}>
         <FormItem label="数量" labelCol={{
@@ -193,6 +192,26 @@ class AntForm extends Component {
   }
 }
 
-AntForm = Form.create()(AntForm);
+// AntForm = Form.create()(AntForm);
+const MyForm = Form.create({
+  onFieldsChange(props, field) {
+    console.log(field);
+    props.saveFiled(field);
+  },
+  mapPropsToFields(props) {
+    console.log(props);
+    return {
+      numbers: props.myForm.numbers,
+      switch: props.myForm.switch,
+      level: props.myForm.level,
+      name: props.myForm.name,
+      address: props.myForm.address,
+      startDate: props.myForm.startDate,
+      endDate: props.myForm.endDate,
+      time: props.myForm.time,
+      rg: props.myForm.rg
+    }
+  }
+})(AntForm);
 
-export default AntForm;
+export default MyForm;

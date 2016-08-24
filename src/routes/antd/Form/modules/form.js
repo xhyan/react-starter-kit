@@ -1,7 +1,7 @@
 // ------------------------------------
 // Constants
 // ------------------------------------
-const SAVE_FIELD = 'SAVE_FIELD';
+const FIELD_CHANGE = 'FIELD_CHANGE';
 // ------------------------------------
 // Actions
 // ------------------------------------
@@ -14,8 +14,8 @@ export function saveFiled(field) {
 
 function change(field){
   return {
-    type: SAVE_FIELD,
-    field: field
+    type: FIELD_CHANGE,
+    field: field,
   }
 }
 
@@ -23,9 +23,9 @@ function change(field){
 // Action Handlers
 // ------------------------------------
 const ACTION_HANDLERS = {
-  [SAVE_FIELD]: (state, action) =>{
+  [FIELD_CHANGE]: (state, action) =>{
     return ({ ...state,
-      ...field
+      ...action.field
     });
   }
 }
@@ -34,11 +34,9 @@ const ACTION_HANDLERS = {
 // Reducer
 // ------------------------------------
 const initialState = {
-    numbers: {
-      value: 5
-    },
+    numbers: {value: 5},
     switch: {},
-    level: {},
+    level: {value: 2},
     name: {},
     address: {},
     startDate: {},
