@@ -1,0 +1,326 @@
+" Press <F1> for help
+
+-[F]react-starter-kit {
+ |-[F]bin {
+ | |-compile.js
+ | |-server.js }
+ |
+ |-[F]blueprints {
+ | |-[F]blueprint {
+ | | |-[F]files {
+ | | | |-[F]blueprints {
+ | | |   |-[F]__name__ {
+ | | |     |-index.js } } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]duck {
+ | | |-[F]files {
+ | | | |-[F]__root__ {
+ | | | | |-[F]redux {
+ | | | |   |-[F]modules {
+ | | | |     |-__name__.js } } }
+ | | | |
+ | | | |-[F]__test__ {
+ | | |   |-[F]redux {
+ | | |     |-[F]modules {
+ | | |       |-__name__.spec.js } } } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]dumb {
+ | | |-[F]files {
+ | | | |-[F]__root__ {
+ | | | | |-[F]components {
+ | | | |   |-[F]__name__ {
+ | | | |     |-__name__.js
+ | | | |     |-index.js } } }
+ | | | |
+ | | | |-[F]__test__ {
+ | | |   |-[F]components {
+ | | |     |-__name__.spec.js } } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]form {
+ | | |-[F]files {
+ | | | |-[F]__root__ {
+ | | | | |-[F]forms {
+ | | | |   |-[F]__name__Form {
+ | | | |     |-__name__Form.js
+ | | | |     |-index.js } } }
+ | | | |
+ | | | |-[F]__test__ {
+ | | |   |-[F]forms {
+ | | |     |-__name__Form.spec.js } } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]layout {
+ | | |-[F]files {
+ | | | |-[F]__root__ {
+ | | | | |-[F]layouts {
+ | | | |   |-[F]__name__Layout {
+ | | | |     |-__name__Layout.js
+ | | | |     |-index.js } } }
+ | | | |
+ | | | |-[F]__test__ {
+ | | |   |-[F]layouts {
+ | | |     |-__name__Layout.spec.js } } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]smart {
+ | | |-[F]files {
+ | | | |-[F]__root__ {
+ | | | | |-[F]containers {
+ | | | |   |-__name__.js
+ | | | |   |-index.js } }
+ | | | |
+ | | | |-[F]__test__ {
+ | | |   |-[F]containers {
+ | | |     |-__name__.spec.js } } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]view {
+ |   |-[F]files {
+ |   | |-[F]__root__ {
+ |   | | |-[F]views {
+ |   | |   |-[F]__name__View {
+ |   | |     |-__name__View.js
+ |   | |     |-index.js } } }
+ |   | |
+ |   | |-[F]__test__ {
+ |   |   |-[F]views {
+ |   |     |-__name__View.spec.js } } }
+ |   |
+ |   |-index.js } }
+ |
+ |-[F]build {
+ | |-karma.conf.js
+ | |-webpack-compiler.js
+ | |-webpack.config.js }
+ |
+ |-[F]config {
+ | |-environments.js
+ | |-index.js }
+ |
+ |-[F]server {
+ | |-[F]lib {
+ | | |-apply-express-middleware.js }
+ | |
+ | |-[F]middleware {
+ | | |-webpack-dev.js
+ | | |-webpack-hmr.js }
+ | |
+ | |-main.js }
+ |
+ |-[F]src {
+ | |-[F]components {
+ | | |-[F]Counter {
+ | |   |-Counter.js
+ | |   |-Counter.less
+ | |   |-index.js } }
+ | |
+ | |-[F]layouts {
+ | | |-[F]CoreLayout {
+ | |   |-CoreLayout.jsx
+ | |   |-index.js
+ | |   |-Layout.less } }
+ | |
+ | |-[F]routes {
+ | | |-[F]antd {
+ | | | |-[F]Form {
+ | | | | |-[F]components {
+ | | | | | |-Form.jsx }
+ | | | | |
+ | | | | |-[F]containers {
+ | | | | | |-FormContainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-form.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Modal {
+ | | | | |-[F]components {
+ | | | | | |-Modal.jsx }
+ | | | | |
+ | | | | |-[F]containers {
+ | | | | | |-ModalContainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-modal.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Table {
+ | | | | |-[F]components {
+ | | | | | |-Table.jsx }
+ | | | | |
+ | | | | |-[F]containers {
+ | | | | | |-TableContainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-table.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Transfer {
+ | | |   |-[F]components {
+ | | |   | |-transfer.jsx }
+ | | |   |
+ | | |   |-[F]containers {
+ | | |   | |-TransferContainers.js }
+ | | |   |
+ | | |   |-[F]modules {
+ | | |   | |-transfer.js }
+ | | |   |
+ | | |   |-index.js } }
+ | | |
+ | | |-[F]example {
+ | | | |-[F]Counter {
+ | | | | |-[F]containers {
+ | | | | | |-CounterContainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-counter.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Elapse {
+ | | | | |-[F]components {
+ | | | | | |-Elapse.js }
+ | | | | |
+ | | | | |-[F]containers {
+ | | | | | |-ElapseContainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-elapse.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Form {
+ | | | | |-[F]components {
+ | | | | | |-Form.js
+ | | | | | |-Form.less }
+ | | | | |
+ | | | | |-[F]containers {
+ | | | | | |-Formcontainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-form.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Home {
+ | | | | |-[F]assets {
+ | | | | | |-Duck.jpg }
+ | | | | |
+ | | | | |-[F]components {
+ | | | | | |-HomeView.js
+ | | | | | |-HomeView.less }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]PageNotFound {
+ | | | | |-[F]assets {
+ | | | | | |-404.jpg }
+ | | | | |
+ | | | | |-[F]components {
+ | | | | | |-PageNotFound.js
+ | | | | | |-PageNotFound.less }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Route {
+ | | | | |-[F]components {
+ | | | | | |-Route.js }
+ | | | | |
+ | | | | |-[F]containers {
+ | | | | | |-RouteContainer.js }
+ | | | | |
+ | | | | |-[F]modules {
+ | | | | | |-route.js }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Test {
+ | | | | |-[F]assert {
+ | | | | | |-alert.png }
+ | | | | |
+ | | | | |-[F]components {
+ | | | | | |-Test.js
+ | | | | | |-Test.less }
+ | | | | |
+ | | | | |-index.js }
+ | | | |
+ | | | |-[F]Zen {
+ | | |   |-[F]components {
+ | | |   | |-Zen.js
+ | | |   | |-Zen.less }
+ | | |   |
+ | | |   |-[F]containers {
+ | | |   | |-ZenContainer.js }
+ | | |   |
+ | | |   |-[F]modules {
+ | | |   | |-zen.js }
+ | | |   |
+ | | |   |-index.js } }
+ | | |
+ | | |-index.js }
+ | |
+ | |-[F]static {
+ | | |-favicon.ico
+ | | |-humans.txt
+ | | |-robots.txt }
+ | |
+ | |-[F]store {
+ | | |-createStore.js
+ | | |-reducers.js }
+ | |
+ | |-[F]styles {
+ | | |-_base.less
+ | | |-core.less }
+ | |
+ | |-index.html
+ | |-main.js }
+ |
+ |-[F]tests {
+ | |-[F]components {
+ | | |-[F]Counter {
+ | | | |-Counter.spec.js }
+ | | |
+ | | |-[F]Header {
+ | |   |-Header.spec.js } }
+ | |
+ | |-[F]layouts {
+ | | |-CoreLayout.spec.js }
+ | |
+ | |-[F]routes {
+ | | |-[F]Counter {
+ | | | |-[F]components {
+ | | | | |-CounterView.spec.js }
+ | | | |
+ | | | |-[F]modules {
+ | | | | |-counter.spec.js }
+ | | | |
+ | | | |-index.spec.js }
+ | | |
+ | | |-[F]Home {
+ | |   |-[F]components {
+ | |   | |-HomeView.spec.js }
+ | |   |
+ | |   |-index.spec.js } }
+ | |
+ | |-framework.spec.js
+ | |-test-bundler.js }
+ |
+ |-LICENSE
+ |-nodemon.json
+ |-package.json
+ |-react.exvim
+ |-README.md }
+
+
