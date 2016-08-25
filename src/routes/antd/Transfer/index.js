@@ -1,7 +1,7 @@
 import { injectReducer } from '../../../store/reducers';
 
 export default (store) => ({
-    path: '/antd/table',
+    path: '/antd/transfer',
     getComponent(nextState, cb){
         require.ensure([], (require) => {
             const Transfer = require('./containers/TransferContainer').default;

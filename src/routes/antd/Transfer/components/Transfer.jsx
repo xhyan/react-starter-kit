@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Transfer} from 'antd';
 
 
-class Transfer extends Component{
+class MyTransfer extends Component{
 
     componentDidMount(){
         this.props.fetch();
@@ -11,11 +11,9 @@ class Transfer extends Component{
     render(){
       const props = this.props;
         return(
-            <Transfer
-             dataSource={props.transfer.source}
-             targetKeys={props.transfer.target}
-
-            />
-        )
+            <Transfer rowKey={record => record.key} dataSource={props.transfer.source} targetKeys={props.transfer.target} onChange={props.handleChange} render={record => record.title} />
+        );
     }
 }
+
+export default MyTransfer;

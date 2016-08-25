@@ -29,6 +29,7 @@ export const CoreLayout = ({ children }) => (
                 <Menu.Item key="table"><Link to="/antd/table">Table</Link></Menu.Item>
                 <Menu.Item key="modal"><Link to="/antd/modal">Modal</Link></Menu.Item>
                 <Menu.Item key="form"><Link to="/antd/form">Form</Link></Menu.Item>
+                <Menu.Item key="transfer"><Link to="/antd/transfer">Transfer</Link></Menu.Item>
               </SubMenu>
             </Menu>
           </aside>

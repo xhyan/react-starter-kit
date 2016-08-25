@@ -1,13 +1,14 @@
 import { connect } from 'react-redux';
-import {fetch} from '../modules/transfer';
-import Transfer from '../components/Transfer';
+import {fetch, handleChange} from '../modules/transfer';
+import MyTransfer from '../components/Transfer';
 
 const mapActionCreators = {
-    fetch
+    fetch,
+    handleChange
 }
 
-const mapStateToProps = () =>({
+const mapStateToProps = (state) =>({
     transfer: state.transfer
 })
 
-export default connect(mapStateToProps, mapActionCreators)(Transfer);
+export default connect(mapStateToProps, mapActionCreators)(MyTransfer);
